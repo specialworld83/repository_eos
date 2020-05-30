@@ -1,0 +1,22 @@
+# Maintainer: Calogero Scarnà <info@codelinsoft.it>
+
+pkgname=codelinsoft-keyring
+pkgver=1.0
+pkgrel=3
+pkgdesc='EOS PGP keyring'
+arch=('any')
+url='https://github.com/specialworld83/codelinsoft-keyring'
+license=('GPL')
+install="${pkgname}.install"
+source=('codelinsoft-keyring.tar.gz')
+sha256sums=('SKIP')
+
+prepare() {
+    bsdtar xvzf codelinsoft-keyring.tar.gz
+}
+package() {
+	#cd "${srcdir}/${pkgname}-${pkgver}"
+	cd "${srcdir}/codelinsoft-keyring"
+	make PREFIX=/usr DESTDIR=${pkgdir} install
+}
+# -*- mode: bash;-*-
