@@ -1,6 +1,6 @@
 This repository for EndeavourOS contains packages compiled specifically for it. How to proceed with the installation:
 
-> wget https://repository.codelinsoft.it/eos-repository/codelinsoft-keyring-1.0-3-any.pkg.tar.zst
+wget https://repository.codelinsoft.it/eos-repository/codelinsoft-keyring-1.0-3-any.pkg.tar.zst
 
 > sudo pacman -U codelinsoft-keyring-1.0-3-any.pkg.tar.zst
 
