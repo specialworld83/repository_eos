@@ -6,7 +6,6 @@ pkgver=1.0
 pkgrel=6
 pkgdesc="EndeavourOS System Settings Tool (fork Manjaro Settings Manager)"
 arch=('any')
-url="https://codelinsoft.it/"
 license=('GPL3')
 depends=('icu' 'qt5-base' 'hwinfo' 'kitemmodels' 'kauth' 
          'kcoreaddons' 'ckbcomp' 'xdg-utils' 'mhwd' 'mhwd-db')
