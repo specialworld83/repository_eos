@@ -1,0 +1,27 @@
+pkgname=endeavouros-schemas
+pkgver=1
+pkgrel=6
+pkgdesc="EndeavourOS Schemas Gnome/Cinnamon/Mate/Deepin"
+arch=('any')
+license=('GPL')
+install="endeavouros-schemas.install"
+source=('endeavouros-schemas-1.0.tar.gz'
+	)
+backup=('usr/share/glib-2.0/schemas/99_endeavouros-cinnamon.gschema.override' 
+        'usr/share/glib-2.0/schemas/99_endeavouros-mate.gschema.override' 
+        'usr/share/glib-2.0/schemas/99_endeavouros-gnome.gschema.override'
+	'usr/share/glib-2.0/schemas/92_endeavouros_deepin.gschema.override')
+md5sums=('SKIP' )
+
+package() {
+	install -dDm 755 $pkgdir/usr/share/glib-2.0/schemas/
+	cp -rv $srcdir/endeavouros-schemas-1.0/99_endeavouros-cinnamon.gschema.override $pkgdir/usr/share/glib-2.0/schemas/
+	cp -rv $srcdir/endeavouros-schemas-1.0/99_endeavouros-mate.gschema.override $pkgdir/usr/share/glib-2.0/schemas/
+	cp -rv $srcdir/endeavouros-schemas-1.0/99_endeavouros-gnome.gschema.override $pkgdir/usr/share/glib-2.0/schemas/
+    cp -rv $srcdir/endeavouros-schemas-1.0/92_endeavouros_deepin.gschema.override $pkgdir/usr/share/glib-2.0/schemas/
+    install -dDm 755 $pkgdir/usr/share/icons/Arc-X-D/places/symbolic/
+    cp -rv ../endeavouros.svg $pkgdir/usr/share/icons/Arc-X-D/places/symbolic/
+        
+
+
+} 

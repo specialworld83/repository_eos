@@ -1,0 +1,89 @@
+# Maintainer: Calogero Scarnà <info@codelinsoft.it>
+# Theme based to Qogir
+
+pkgbase=artwork-endeavouros-dark
+pkgname=('endeavouros-icon-theme' 'endeavouros-dark-icon-theme' 'plasma5-themes-endeavouros' 'sddm-endeavouros-theme' )
+pkgver=6
+pkgrel=17
+arch=('any')
+license=('LGPL')
+makedepends=('extra-cmake-modules' 'plasma-framework')
+source=("artwork-breath-master.tar.xz")
+md5sums=('SKIP')
+
+
+prepare() {
+
+  mv $srcdir/artwork-breath-master $srcdir/endeavouros
+  mkdir -p build
+}
+
+build() {
+  cd build
+  cmake ../endeavouros \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DKDE_INSTALL_USE_QT_SYS_PATHS=ON
+  make
+}
+
+
+
+package_endeavouros-icon-theme() {
+  pkgdesc='endeavouros icon theme'
+  cd build
+  make DESTDIR="${pkgdir}" install
+  rm -rf "${pkgdir}/usr/share/color-schemes"
+  rm -rf "${pkgdir}/usr/share/icons/breath-dark"
+  rm -rf "${pkgdir}/usr/share/kservices5"
+  rm -rf "${pkgdir}/usr/share/metainfo"
+  rm -rf "${pkgdir}/usr/share/plasma"
+  rm -rf "${pkgdir}/usr/share/sddm"
+  rm -rf "${pkgdir}/usr/share/wallpapers"
+}
+
+package_endeavouros-dark-icon-theme() {
+  pkgdesc='endeavouros dark icon theme'
+  cd build
+  make DESTDIR="${pkgdir}" install
+  rm -rf "${pkgdir}/usr/share/color-schemes"
+  rm -rf "${pkgdir}/usr/share/icons/breath"
+  rm -rf "${pkgdir}/usr/share/kservices5"
+  rm -rf "${pkgdir}/usr/share/metainfo"
+  rm -rf "${pkgdir}/usr/share/plasma"
+  rm -rf "${pkgdir}/usr/share/sddm"
+  rm -rf "${pkgdir}/usr/share/wallpapers"
+}
+
+package_plasma5-themes-endeavouros() {
+  pkgdesc='Condres theme for KDE Plasma 5'
+  depends=('breeze' 'kvantum-qt5')
+  optdepends=('breath-icon-theme: light icon theme'
+              'breath-dark-icon-theme: dark icon theme')
+  replaces=('breath-themes')
+  cd build
+  make DESTDIR="${pkgdir}" install
+  install -dm 755 $pkgdir/usr/share/Kvantum/Qogir
+  cp -a ${srcdir}/endeavouros/Qogir/* $pkgdir/usr/share/Kvantum/Qogir
+  cp -a ${srcdir}/endeavouros/Kvantum/kvantum.kvconfig $pkgdir/usr/share/Kvantum/
+  rm -rf "${pkgdir}/usr/share/sddm"
+  rm -rf "${pkgdir}/usr/share/icons"
+  #Aurora theme
+  install -dm 755 $pkgdir/usr/share/aurorae/themes/Qogir
+  install -dm 755 $pkgdir/usr/share/aurorae/themes/Qogir-dark
+  cp -a ${srcdir}/endeavouros/Qogir-aurorae-themes/Qogir/* $pkgdir/usr/share/aurorae/themes/Qogir
+  cp -a ${srcdir}/endeavouros/Qogir-aurorae-themes/Qogir-dark/* $pkgdir/usr/share/aurorae/themes/Qogir-dark
+}
+
+package_sddm-endeavouros-theme() {
+  pkgdesc="endeavouros theme for SDDM"
+  depends=('plasma-framework' 'plasma-workspace' 'qt5-quickcontrols2' 'qt5-quickcontrols')
+  cd build
+  make DESTDIR="${pkgdir}" install
+  rm -rf "${pkgdir}/usr/share/color-schemes"
+  rm -rf "${pkgdir}/usr/share/icons"
+  rm -rf "${pkgdir}/usr/share/kservices5"
+  rm -rf "${pkgdir}/usr/share/metainfo"
+  rm -rf "${pkgdir}/usr/share/plasma"
+  rm -rf "${pkgdir}/usr/share/wallpapers"
+}
