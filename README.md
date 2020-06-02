@@ -14,10 +14,11 @@ Let's add the repository in pacman:
 
 add code:
 
-> [eos-repository] 
-> SigLevel = PackageRequired
-> Server = https://repository.codelinsoft.it/eos-repository
-
+```
+[eos-repository] 
+SigLevel = PackageRequired
+Server = https://repository.codelinsoft.it/eos-repository
+```
 We install the EndeavorOS Settings Manager
 
 >sudo pacman -S eos-settings-manager
