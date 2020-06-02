@@ -45,3 +45,4 @@ We install the EndeavorOS Settings Manager
 
 # Credit
 EOS settings managaer ( fork Manjaro settings managaer )
+Calogero Scarnà - manteiner repository
