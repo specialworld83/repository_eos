@@ -1,0 +1,16 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=XP-Pen driver
+Type=Application
+Exec=kdesu /usr/share/xp-pen-tablet-stable/Pentablet_Driver  %F
+Terminal=false
+Icon=/usr/share/xp-pen-tablet-stable/images/XP-Pen_logo.jpg
+Comment=XP-Pen (Official) Linux (stable) driver
+Categories=KDE;GNOME;GTK;X-XFCE;Settings;HardwareSettings;
+OnlyShowIn=KDE;GNOME;Settings;XFCE
+Hidden=false
+X-GNOME-Autostart-enabled=false
+GenericName=
