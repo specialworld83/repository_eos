@@ -24,6 +24,10 @@ We install the EndeavorOS Settings Manager
 
 # Screenshot:
 
+# EOS settings managaer
+![eos_settings_manager](/screenshot_theme/eos_settings_manager.png)
+![eos_settings_manager](/screenshot_theme/eos_settings_manager_plasma.png)
+
 # Deepin 
 ![deepin_theme](/screenshot_theme/deepin_theme.png)
 
@@ -38,3 +42,6 @@ We install the EndeavorOS Settings Manager
 
 # Kde
 ![kde_theme](/screenshot_theme/kde_theme.png)
+
+# Credit
+EOS settings managaer ( fork Manjaro settings managaer )
