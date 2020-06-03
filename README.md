@@ -5,9 +5,6 @@ This repository for **EndeavourOS** contains packages compiled specifically for 
 Add pacman key
 > sudo pacman-key --recv-keys AEE1E900
 
-Install keyring
-> sudo pacman -S codelinsoft-keyring
-
 Let's add the repository in pacman:
 
 > sudo nano /etc/pacman.conf
@@ -19,6 +16,9 @@ add code:
 SigLevel = PackageRequired
 Server = https://repository.codelinsoft.it/eos-repository
 ```
+Install keyring
+> sudo pacman -Syu codelinsoft-keyring
+
 We install the EndeavorOS Settings Manager
 
 >sudo pacman -S eos-settings-manager
