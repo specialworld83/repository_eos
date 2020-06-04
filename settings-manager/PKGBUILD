@@ -3,12 +3,12 @@
 
 pkgname=eos-settings-manager
 pkgver=1.0
-pkgrel=6
+pkgrel=7
 pkgdesc="EndeavourOS System Settings Tool (fork Manjaro Settings Manager)"
 arch=('any')
 license=('GPL3')
 depends=('icu' 'qt5-base' 'hwinfo' 'kitemmodels' 'kauth' 
-         'kcoreaddons' 'ckbcomp' 'xdg-utils' 'mhwd' 'mhwd-db')
+         'kcoreaddons' 'ckbcomp' 'xdg-utils' 'mhwd-db-garuda-git' 'mhwd-garuda-git')
 makedepends=('git' 'extra-cmake-modules' 'kdoctools' 'qt5-tools'
              'knotifications' 'kconfigwidgets' 'kcmutils')
 source=("eos-settings-manager-1.0.tar.gz")
