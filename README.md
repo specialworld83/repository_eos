@@ -12,7 +12,7 @@ Let's add the repository in pacman:
 add code:
 
 ```
-[eos-repository] 
+[codelinsoft-eos-repository] 
 SigLevel = PackageRequired
 Server = https://repository.codelinsoft.it/eos-repository
 ```
