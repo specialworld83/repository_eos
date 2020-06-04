@@ -1,4 +1,4 @@
-# Unofficial respository EndeavourOS
+# Unofficial repository EndeavourOS
 
 This repository for **EndeavourOS** contains packages compiled specifically for it. How to proceed with the installation:
 
