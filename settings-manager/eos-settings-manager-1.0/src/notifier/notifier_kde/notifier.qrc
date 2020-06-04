@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/language.png</file>
+        <file>icons/tux-eos.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=EndeavourOS Notifier Settings
+Name[fr]=Paramètres du Notifieur EndeavourOS
+Name[sk]=Nastavenia oznámení systému EndeavourOS
+
+Comment=Graphical Settings for EndeavourOS Notifier
+Comment[de]=Grafische Einstellungsverwaltung für EndeavourOS
+Comment[fr]=Gestionnaire graphique de paramètres pour Notifieur EndeavourOS
+Comment[sk]=Grafické nastavenia oznámení pre systém EndeavourOS
+
+Exec=eossm_notifier --settings
+Icon=/usr/share/icons/EndeavourOS-logo.png
+Terminal=false
+Type=Application
+Categories=Settings;DesktopSettings;X-LXDE-Settings;X-XFCE-SettingsDialog;X-KDE-Settings;X-XFCE-SystemSettings;

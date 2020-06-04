@@ -1,0 +1,16 @@
+[SddmGreeterTheme]
+Name=Sugar Light EOS Theme
+Description=The sweetest theme around
+Author=EOS OS Dev Team
+Copyright=Copyright 2019 (C) EOS OS team
+License=GPL-3.0-or-later
+Type=sddm-theme
+Version=1.0
+Website=https://github.com/MarianArlt/sddm-sugar-light
+Screenshot=Preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Email=info@codelinsoft.it
+Theme-Id=sugar-light
+Theme-API=2.11

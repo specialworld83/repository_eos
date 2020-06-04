@@ -1,0 +1,10 @@
+[Desktop Entry]
+Exec=eossm_kde_notifier
+Name=EOSSM Notifier
+Type=Application
+StartupNotify=false
+Terminal=false
+Hidden=false
+OnlyShowIn=KDE;GNOME;Unity;XFCE
+Icon=/usr/share/icons/EndeavourOS-logo.png
+Categories=Settings;DesktopSettings;X-LXDE-Settings;X-XFCE-SettingsDialog;X-KDE-Settings;X-XFCE-SystemSettings;

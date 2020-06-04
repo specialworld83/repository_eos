@@ -1,0 +1,30 @@
+[Desktop Entry]
+Name=breath
+Comment=A new breath
+Comment[es]=Un nuevo aliento
+X-KDE-PluginInfo-Author=CodeLinSoft
+X-KDE-PluginInfo-Email=info[at]codelinsoft[dot]it
+X-KDE-PluginInfo-Name=Breath
+X-KDE-PluginInfo-Version=0.2.0
+X-KDE-PluginInfo-Website=https://www.codelinsoft.it/sito
+X-KDE-PluginInfo-Category=Plasma Theme
+X-KDE-PluginInfo-License=CC BY-ND (GPL in Breeze Elements)
+X-KDE-PluginInfo-EnabledByDefault=true
+X-Plasma-API=5.0
+
+Name[de_DE.utf8]=breath
+Name[en_US.utf8]=breath
+Name[fr_FR.utf8]=breath
+
+[Wallpaper]
+defaultWallpaperTheme=Breath
+defaultFileSuffix=.png
+defaultWidth=1980
+defaultHeight=1080
+
+[ContrastEffect]
+#enabled=true
+#contrast=0.2
+#intensity is disabled, in order to auto adjust to the chosen theme color
+#intensity=2.0
+#saturation=1.7

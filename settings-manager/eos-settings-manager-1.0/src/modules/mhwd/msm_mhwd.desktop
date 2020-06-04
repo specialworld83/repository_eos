@@ -1,0 +1,78 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Service
+Icon=audio-card
+Exec=kcmshell5 msm_mhwd
+
+X-KDE-Library=msm_mhwd
+X-KDE-ServiceTypes=KCModule
+X-KDE-System-Settings-Parent-Category=eos
+X-KDE-ParentApp=kcontrol
+X-KDE-PluginKeyword=msm_mhwd
+X-KDE-Keywords=hardware
+X-KDE-Keywords[x-test]=xxhardwarexx
+Categories=Qt;KDE;X-KDE-settings-system;eos
+
+Name=Hardware Configuration
+Name[ca]=Configuració del maquinari
+Name[cs_CZ]=Nastavení hardware
+Name[da]=Hardwarekonfiguration
+Name[de]=Hardwarekonfiguration
+Name[el]=Ρύθμιση υλικού
+Name[es]=Configuración de hardware
+Name[es_419]=Configuración de Hardware
+Name[fa_IR]=پیکربندی سخت افزار
+Name[fi]=Laitteiston asetukset
+Name[fr]=Configuration Matérielle
+Name[hr]=Konfiguracija sklopovlja
+Name[hu]=Hardware Konfiguráció
+Name[is]=Vélbúnaðar stillingar
+Name[it]=Configurazione Hardware
+Name[ja]=ハードウェアの設定
+Name[lt]=Aparatinės įrangos konfigūravimas
+Name[nb]=Maskinvareoppsett
+Name[nl]=Hardware Configuratie
+Name[pl]=Konfiguracja sprzętowa
+Name[pt_BR]=Configuração de Hardware
+Name[pt_PT]=Configuração do Hardware
+Name[ro]=Configurare Hardware
+Name[ru]=Конфигурация оборудования
+Name[sk_SK]=Konfigurácia hardvéru
+Name[sl]=Strojna nastavitev
+Name[sv]=Hårdvarukonfiguration
+Name[tr]=Donanım Yapılandırma Aracı
+Name[uk]=Конфігурація обладнання
+Name[zh_CN]=硬件设定
+Name[zh_TW]=硬體設定
+
+Name[ast]=Configuración de Hardware
+
+
+Comment=eos Hardware Detection graphical user interface
+Comment[ca]=Interfície d'usuari gràfica per a la Detecció de maquinari del eos
+Comment[da]=eos hardwareregistrering grafisk brugerflade
+Comment[de]=Grafische Benutzeroberfläche der eos-Hardwareerkennung
+Comment[es]=Interfaz gráfica de usuario para eos Hardware Detection
+Comment[es_419]=Interfaz gráfica de Detección de Hardware de eos
+Comment[fa_IR]=تشخیص سخت افزاری رابط گرافیکی کاربر مانجارو
+Comment[fi]=eos laitteiston tunnistuksen graaffinen käyttöliittymä
+Comment[fr]=Interface utilisateur de détection matérielle de eos
+Comment[hr]=Grafičko korisničko sučelje za eos Hardware Detection
+Comment[hu]=eos Hardware Érzékelés grafikus felhasználói felület
+Comment[is]=eos vélbúnaðar greining með grafísku notendaviðmóti
+Comment[it]=Interfaccia grafica di eos Hardware Detection
+Comment[ja]=eos Hardware Detection graphical user interface
+Comment[lt]=eos aparatinės įrangos aptikimo grafinė naudotojo sąsaja
+Comment[nb]=Grensesnitt for eos Hardware Detection
+Comment[pl]=Graficzny interfejs użytkownika wykrywania sprzętu eos
+Comment[pt_BR]=Interface Gráfica do Usuário eos Hardware Detection
+Comment[pt_PT]=eos Hardware Detection interface gráfica do utilizador
+Comment[ro]=Interfața grafică de detectare hardware a sistemului eos
+Comment[ru]=Графический интерфейс eos Hardware Detection
+Comment[sk_SK]=Grafické rozhranie pre rozpoznanie hardvéru systému eos
+Comment[sl]=eos strojna zaznava grafičnega vmesnika
+Comment[sv]=eoss hårdvarudetekteringsverktyg
+Comment[tr]=MHWD - eos Donanım Yapılandırma grafik arayüzü
+Comment[uk]=eos виявлено обладнання графічний користувальницький інтерфейс
+Comment[zh_CN]=使用 eos 硬件侦测图形用户界面
+Comment[zh_TW]=eos 硬體偵測圖形使用者介面
