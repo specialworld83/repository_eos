@@ -1,7 +1,7 @@
 # Maintainer:  Bjoern Franke <bjo+aur@schafweide.org>
 # Contributor: feanor1397 <feanor1397@gmail.com>
 
-pkgname=rtlwifi_new-extended-dkms
+pkgname=rtlwifi_new-rtw88-dkms
 _pkgname=rtlwifi_new
 pkgver=r326.92a6ff4
 pkgrel=1
