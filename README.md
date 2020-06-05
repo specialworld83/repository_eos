@@ -27,6 +27,9 @@ We install the EndeavorOS Settings Manager
 
 # EOS settings managaer
 ![eos_settings_manager](/screenshot_theme/eos_settings_manager.png)
+## EOS Kernel manager
+![eos_settings_manager1](/screenshot_theme/eos_settings_manager1.png)
+## EOS kcm module plasma
 ![eos_settings_manager](/screenshot_theme/eos_settings_manager_plasma.png)
 
 # Deepin 
