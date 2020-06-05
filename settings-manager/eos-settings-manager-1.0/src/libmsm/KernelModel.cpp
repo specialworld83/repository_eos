@@ -51,15 +51,15 @@ KernelModel::update()
     QStringList recommendedKernels = getRecommendedKernels();
 
     QSet<QString> modulesToInstall;
-    foreach ( const QString& module, QStringList( installedKernelPackages.keys() ).filter( QRegularExpression( "^linux([0-9][0-9]?([0-9])|-rt-manjaro|-rt-lts-manjaro)-" ) ) )
+    foreach ( const QString& module, QStringList( installedKernelPackages.keys() ).filter( QRegularExpression( "^linux(.*)-" ) ) )
     {
-        QString aux = QString( module ).remove( QRegularExpression( "^linux([0-9][0-9]?([0-9])|-rt-manjaro|-rt-lts-manjaro)-" ) );
+        QString aux = QString( module ).remove( QRegularExpression( "^linux(.*)-" ) );
         modulesToInstall.insert( aux );
     }
 
     beginResetModel();
     m_kernels.clear();
-    foreach ( const QString& kernel, QStringList( allKernelPackages.keys() ).filter( QRegularExpression( "^linux([0-9][0-9]?([0-9])|-rt-manjaro|-rt-lts-manjaro)$" ) ) )
+    foreach ( const QString& kernel, QStringList( allKernelPackages.keys() ).filter( QRegularExpression( "^linux(.*)$" ) ) )
     {
         Kernel newKernel;
 
@@ -80,7 +80,7 @@ KernelModel::update()
             else
             {
                 newKernel.setAvailable( false );
-                newKernel.setUnsupported( true );
+                newKernel.setUnsupported( false );
             }
         }
         newKernel.setInstalled( installedKernelPackages.contains( kernel ) );
@@ -106,9 +106,7 @@ KernelModel::update()
         newKernel.setLts( ltsKernels.contains( kernel ) );
         newKernel.setRecommended( recommendedKernels.contains( kernel ) );
 
-        if ( ( runningKernel.minorVersion() == newKernel.minorVersion() ) &&
-                ( runningKernel.majorVersion() == newKernel.majorVersion() ) &&
-                ( runningKernel.isRealtime() == newKernel.isRealtime() ) )
+        if ( ( runningKernel.package() == newKernel.package() ) )
             newKernel.setRunning( true );
 
         m_kernels.append( newKernel );
@@ -211,7 +209,7 @@ KernelModel::getAvailablePackages() const
 {
     QProcess process;
     process.setEnvironment( QStringList() << "LANG=C" << "LC_MESSAGES=C" );
-    process.start( "pacman", QStringList() << "-Ss" << "^linux([0-9][0-9]?([0-9])|-rt-manjaro|-rt-lts-manjaro)" );
+    process.start( "mhwd-kernel", QStringList() << "-l" );
     if ( !process.waitForFinished( 15000 ) )
         qDebug() << "error: failed to get installed kernels";
     QString result = process.readAllStandardOutput();
@@ -239,7 +237,7 @@ KernelModel::getInstalledPackages() const
 {
     QProcess process;
     process.setEnvironment( QStringList() << "LANG=C" << "LC_MESSAGES=C" );
-    process.start( "pacman", QStringList() << "-Qs" << "^linux([0-9][0-9]?([0-9])|-rt-manjaro|-rt-lts-manjaro)" );
+    process.start( "mhwd-kernel", QStringList() << "-li" );
     if ( !process.waitForFinished( 15000 ) )
         qDebug() << "error: failed to get installed kernels";
     QString result = process.readAll();
@@ -339,20 +337,31 @@ KernelModel::getRunningKernel() const
     env.insert( "LC_MESSAGES", "C" );
     env.insert( "LC_ALL", "C" );
 
+    QProcess pname;
+    pname.setProcessEnvironment( env );
+
+    pname.start( "mhwd-kernel", QStringList() << "-lr" );
+    pname.waitForFinished();
+    QString result = pname.readAllStandardOutput();
+    result = result.trimmed();
+    pname.close();
+
     QProcess uname;
     uname.setProcessEnvironment( env );
 
     uname.start( "uname", QStringList() << "-r" );
     uname.waitForFinished();
-    QString result = uname.readAllStandardOutput();
+    QString result1 = uname.readAllStandardOutput();
     uname.close();
 
     Kernel kernel;
-    QStringList aux = result.split( ".", QString::SkipEmptyParts );
+    QStringList aux = result1.split( ".", QString::SkipEmptyParts );
     QString version = QString( "%1.%2" ).arg( aux.at( 0 ) ).arg( aux.at( 1 ) );
-    if ( result.contains( "-rt" ) )
+    if ( result1.contains( "-rt" ) )
         version.append( "rt" );
     kernel.setVersion( version );
+    kernel.setPackage( result );
+//    qDebug()<< result;
     return kernel;
 }
 
@@ -360,14 +369,14 @@ KernelModel::getRunningKernel() const
 QStringList
 KernelModel::getLtsKernels() const
 {
-    return QStringList() << "linux310" << "linux312" << "linux314" << "linux316" << "linux318" << "linux41" << "linux44" << "linux49";
+    return QStringList() << "linux-lts";
 }
 
 
 QStringList
 KernelModel::getRecommendedKernels() const
 {
-    return QStringList() << "linux49";
+    return QStringList() << "linux-zen" << "linux-lts" << "linux";
 }
 
 

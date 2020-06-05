@@ -1,3 +1,4 @@
+add_subdirectory(kernel)
 add_subdirectory(keyboard)
 add_subdirectory(language_packages)
 add_subdirectory(locale)

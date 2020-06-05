@@ -26,7 +26,7 @@ SET_TARGET_PROPERTIES(msm_bin
     ENABLE_EXPORTS TRUE
     RUNTIME_OUTPUT_NAME eos-settings-manager)
 target_link_libraries(msm_bin
-
+    msm_page_kernel
     msm_page_keyboard
     msm_page_language_packages
     msm_page_locale

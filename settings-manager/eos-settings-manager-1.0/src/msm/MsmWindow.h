@@ -20,7 +20,7 @@
 
 #ifndef MSMWINDOW_H
 #define MSMWINDOW_H
-
+#include "KernelPage.h"
 #include "KeyboardPage.h"
 #include "LocalePage.h"
 #include "LanguagePackagesPage.h"
@@ -74,7 +74,7 @@ private:
     };
 
     Ui::MsmWindow* ui;
-    
+    KernelPage pageKernel;
     KeyboardPage pageKeyboard;
     LocalePage pageLanguage;
     LanguagePackagesPage pageLanguagePackages;

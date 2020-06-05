@@ -1,0 +1,43 @@
+<RCC>
+  <qresource prefix="/">
+    <file>changelogs/linux34.html</file>
+    <file>changelogs/linux38.html</file>
+    <file>changelogs/linux310.html</file>
+    <file>changelogs/linux311.html</file>
+    <file>changelogs/linux312.html</file>
+    <file>changelogs/linux313.html</file>
+    <file>changelogs/linux314.html</file>
+    <file>changelogs/linux315.html</file>
+    <file>changelogs/linux316.html</file>
+    <file>changelogs/linux317.html</file>
+    <file>changelogs/linux318.html</file>
+    <file>changelogs/linux319.html</file>
+    <file>changelogs/linux40.html</file>
+    <file>changelogs/linux41.html</file>
+    <file>changelogs/linux42.html</file>
+    <file>changelogs/linux43.html</file>
+    <file>changelogs/linux44.html</file>
+    <file>changelogs/linux45.html</file>
+    <file>changelogs/linux46.html</file>
+    <file>changelogs/linux47.html</file>
+    <file>changelogs/linux48.html</file>
+    <file>changelogs/linux49.html</file>
+    <file>changelogs/linux410.html</file>
+    <file>changelogs/linux411.html</file>
+    <file>changelogs/linux412.html</file>
+    <file>changelogs/linux413.html</file>
+    <file>changelogs/linux414.html</file>
+    <file>changelogs/linux415.html</file>
+    <file>changelogs/linux416.html</file>
+    <file>changelogs/linux417.html</file>
+    <file>changelogs/linux418.html</file>
+    <file>changelogs/linux419.html</file>
+    <file>changelogs/linux420.html</file>
+    <file>changelogs/linux50.html</file>
+    <file>changelogs/linux51.html</file>
+    <file>changelogs/linux52.html</file>
+    <file>changelogs/linux53.html</file>
+    <file>changelogs/linux54.html</file>
+    <file>changelogs/linux55.html</file>
+  </qresource>
+</RCC>

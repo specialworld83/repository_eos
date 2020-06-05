@@ -3,7 +3,7 @@
 
 pkgname=eos-settings-manager
 pkgver=1.0
-pkgrel=7
+pkgrel=9
 pkgdesc="EndeavourOS System Settings Tool (fork Manjaro Settings Manager)"
 arch=('any')
 license=('GPL3')
