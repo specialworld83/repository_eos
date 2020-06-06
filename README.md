@@ -19,6 +19,18 @@ Server = https://repository.codelinsoft.it/eos-repository
 Install keyring
 > sudo pacman -Syu codelinsoft-keyring
 
+If the keyring installation fails, proceed as follows:
+
+change code:
+
+```
+[codelinsoft-eos-repository] 
+SigLevel = Never
+Server = https://repository.codelinsoft.it/eos-repository
+```
+Install keyring
+> sudo pacman -Syu codelinsoft-keyring
+
 We install the EndeavorOS Settings Manager
 
 >sudo pacman -S eos-settings-manager
