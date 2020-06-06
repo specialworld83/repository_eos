@@ -1,0 +1,18 @@
+_pkgname='EOS community Wallpapers'
+pkgname=eos-community-wallpapers
+pkgver=1.0
+pkgrel=1
+pkgdesc='Wallpapers for EOS community'
+arch=(any)
+license=(GPL)
+source=("eos-community-wallpapers.tar.gz")
+sha256sums=('SKIP')
+
+package() {
+	mkdir -p "${pkgdir}/usr/share/backgrounds"
+	mkdir -p "${pkgdir}/usr/share/wallpapers"
+	cp -rf "${srcdir}/eos-community-wallpapers/eos-community-wallpapers" "${pkgdir}/usr/share/wallpapers/"
+	cp -rf "${srcdir}/eos-community-wallpapers/eos-community-wallpapers" "${pkgdir}/usr/share/backgrounds/"
+	mkdir -p "${pkgdir}/usr/share/gnome-background-properties"
+	cp -f "${srcdir}/eos-community-wallpapers/eos-community-wallpapers.xml" "${pkgdir}/usr/share/gnome-background-properties"
+}

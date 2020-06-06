@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+    <wallpaper deleted="false">
+		<name>christimas_eos</name>
+		<filename>/usr/share/backgrounds/eos-community-wallpapers/christimas_eos.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+    <wallpaper deleted="false">
+		<name>confution</name>
+		<filename>/usr/share/backgrounds/eos-community-wallpapers/confution.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+    <wallpaper deleted="false">
+		<name>endeavour_abstract</name>
+		<filename>/usr/share/backgrounds/eos-community-wallpapers/endeavour_abstract.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+    <wallpaper deleted="false">
+		<name>endeavour_bubblet</name>
+		<filename>/usr/share/backgrounds/eos-community-wallpapers/endeavour_bubblet.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+    <wallpaper deleted="false">
+		<name>endeavour_kratos</name>
+		<filename>/usr/share/backgrounds/eos-community-wallpapers/endeavour_kratos.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+    <wallpaper deleted="false">
+		<name>endeavour_puzzle</name>
+		<filename>/usr/share/backgrounds/eos-community-wallpapers/endeavour_puzzle.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+    <wallpaper deleted="false">
+		<name>endeavour</name>
+		<filename>/usr/share/backgrounds/eos-community-wallpapers/endeavour.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+    <wallpaper deleted="false">
+		<name>eos_bubble_new</name>
+		<filename>/usr/share/backgrounds/eos-community-wallpapers/eos_bubble_new.png</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+    <wallpaper deleted="false">
+		<name>eos_bubble</name>
+		<filename>/usr/share/backgrounds/eos-community-wallpapers/eos_bubble.png</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+     <wallpaper deleted="false">
+		<name>eos_itech</name>
+		<filename>/usr/share/backgrounds/eos-community-wallpapers/eos_itech.png</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+     <wallpaper deleted="false">
+		<name>eos_material_new</name>
+		<filename>/usr/share/backgrounds/eos-community-wallpapers/eos_material_new.png</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+	<wallpaper deleted="false">
+		<name>EOS_material</name>
+		<filename>/usr/share/backgrounds/eos-community-wallpapers/EOS_material.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+    <wallpaper deleted="false">
+		<name>start-background</name>
+		<filename>/usr/share/backgrounds/eos-community-wallpapers/start-background.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+</wallpaper>	
