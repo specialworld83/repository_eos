@@ -4,7 +4,7 @@
 pkgbase=artwork-endeavouros-dark
 pkgname=('endeavouros-icon-theme' 'endeavouros-dark-icon-theme' 'plasma5-themes-endeavouros' 'sddm-endeavouros-theme' )
 pkgver=6
-pkgrel=17
+pkgrel=19
 arch=('any')
 license=('LGPL')
 makedepends=('extra-cmake-modules' 'plasma-framework')
