@@ -4,7 +4,7 @@
 
 pkgbase=mhwd-db-garuda-git
 pkgname=('mhwd-db-garuda-git')
-pkgver=r24.c857013
+pkgver=r29.1192b6b
 pkgrel=1
 pkgdesc="mhwd-db-garuda(manjaro's mhwd-db backported to archlinux with additional features and limited to only dkms drivers)"
 arch=('any')
